@@ -27,7 +27,7 @@ const FilterView = ({visible, setVisible}: IFilterProps)=> {
 
     { 
       id: 2,
-      label: 'Regular Cards',
+      label: 'Regular Cars',
       value: 'Regular Cars',
 
     },
