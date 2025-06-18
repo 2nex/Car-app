@@ -7,12 +7,18 @@ import CarBrandComponent from '../../components/carBrand/component';
 import CarComponent from '../../components/car/component';
 import { ScrollView } from 'react-native-gesture-handler';
 import CarActionView from './view/carActions.view';
+import { useSearch } from './search.hook';
+import FilterView from './view/filter.view';
+
+
 
 // Define CarActions, assuming it should be CarActionView
 const CarActions = CarActionView;
 
 const SearchScreen= () => {
   const styles = createStyles();
+  
+  const {showFilter, setShowFilter} = useSearch();
   return (
       <View style={styles.container}>
         <HeaderComponent  title="Search" hasBack /> 
@@ -20,7 +26,7 @@ const SearchScreen= () => {
         showsVerticalScrollIndicator={false}
         stickyHeaderIndices={[0]}>
          
-         <SearchComponent
+         <SearchComponent  onFilterPress={() => setShowFilter(!showFilter)}
 
          
          />
@@ -58,6 +64,10 @@ const SearchScreen= () => {
             <CarComponent bottomActions={<CarActionView />}/>
           </View>
         </View>
+        <FilterView 
+         visible={showFilter}
+         setVisible={setShowFilter}
+        />
         </ScrollView>
          </View>
   )

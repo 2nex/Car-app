@@ -80,14 +80,14 @@ export const createStyles = () =>
     },
 
     textContainer: {
-        paddingHorizontal: scale(8),
+        paddingHorizontal: scale(12),
 
     },
 
     text: {
         fontSize: FontSize.FONT_12Px,
         color: colors.placeholder,
-        fontFamily: typography.regular,
+        fontFamily: typography.bold,
 
     },
     dollarContainer: {
@@ -118,6 +118,35 @@ export const createStyles = () =>
     },
     textStyles: {
       fontSize: FontSize.FONT_12Px,
-    }
+    },
+    filterView: {
+      flex: 0.97,
+      backgroundColor: colors.white,
+      borderTopRightRadius: scale(15),
+      borderTopLeftRadius: scale(15),
+    },
+     header: {
+      flexDirection: 'row',
+      alignItems: "center",
+      justifyContent: 'space-between',
+      paddingHorizontal: scale(12),
+      paddingVertical: scale(18),
+      borderBottomColor: colors.btnBorder,
+      borderBottomWidth: 0.1,
+     },
+     _f08: {
+      flex: 0.08,
+     },
+     filterContainer: {
+
+      paddingHorizontal: scale(18),
+      flex: 1,
+
+     },
+     filterTypeText: {
+      fontSize: FontSize.FONT_16Px,
+      fontFamily: typography.semiBold,
+     },
+
 
   });
