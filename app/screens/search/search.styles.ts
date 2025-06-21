@@ -3,6 +3,7 @@ import {colors} from '../../theme/colors';
 import {scale} from '../../theme/scale';
 import {FontSize} from '../../theme/font-size';
 import {typography} from '../../theme/typography';
+import { sitingCapacity } from './view/filter.data';
 
 
 export const createStyles = () =>
@@ -138,8 +139,7 @@ export const createStyles = () =>
       flex: 0.08,
      },
      filterContainer: {
-
-      paddingHorizontal: scale(18),
+     paddingHorizontal: scale(18),
       flex: 1,
 
      },
@@ -147,6 +147,54 @@ export const createStyles = () =>
       fontSize: FontSize.FONT_16Px,
       fontFamily: typography.semiBold,
      },
+slider:{
+  width: '100%',
+  height: scale(40)
 
+}, frsb: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  columnGap: scale(12),
+},
+inputContainer: {
+flex: 1,
+
+},
+tabContainerStyle: {
+  borderWidth: 0,
+
+},
+sitingCapTab: {
+  paddingHorizontal: scale(32),
+
+},
+tabStyle: {
+  borderWidth: 1,
+  borderColor: colors.btnBorder,
+
+},
+tabTextStyle: {
+  color: colors.placeholder,
+  fontFamily: typography.regular,
+  fontSize: FontSize.FONT_12Px,
+
+},
+placeHolder: {
+  color: colors.placeholder
+},
+clearAll: {
+  color: colors.black,
+  fontSize: FontSize.FONT_12Px,
+  fontFamily: typography.semiBold
+},
+btnContainerStyle: {
+  paddingVertical: scale(10),
+  paddingHorizontal: scale(12),
+  backgroundColor: colors.black,
+},
+btnTextStyle:{
+  fontSize: FontSize.FONT_12Px,
+}
 
   });

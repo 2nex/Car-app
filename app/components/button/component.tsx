@@ -1,7 +1,7 @@
 import React from 'react';
 import {Pressable, Text} from 'react-native';
 import {createStyles} from './button.styles';
-import {IButtonProps} from './IButton.props';
+import {IButtonProps} from './IButton,props'
 
 const Button = ({
   text,
